@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="rendeles.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">
+        Rendelés
+    </h1>
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>
+                <label for="name">Név:</label>
+            </legend>
+            <div class="field">
+                <input type="text" name="name" id="name" placeholder="pl.: Haighi Tler">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label for="cim">Cím:</label>
+            </legend>
+            <div class="field">
+                <label for="varos">Település</label>
+                <input type="text" name="varos" id="varos" placeholder="pl.: Tiszaalpár"> <br>
+                <label for="utca">Utca:</label>
+                <input type="text" name="utca" id="utca" placeholder="pl.: Kakas u."> <br>
+                <label for="hazszam">Házszám/emelet:</label>
+                <input type="text" name="hazszam" id="hazszam" placeholder="pl.: 69. 6/7.">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label for="email">E-mail:</label>
+            </legend>
+            <div class="field">
+                <input type="email" name="email" id="email" placeholder="pl.: haighitler@gmail.com">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label for="telefon">Tel.:</label>
+            </legend>
+            <div class="field">
+                <input type="tel" name="telefon" id="telefon" placeholder="pl.: +36306666967" min="12" max="12">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label for="pizza">Pizza</label>
+            </legend>
+            <label for="type">Fajta</label>
+            <select id="type">
+                <optgroup style="text-align: center;" label="Válassz Pizzát">
+                    <option value="sonkás_kukoricas">Sonkás Kukoricás</option>
+                    <option value="magyaros">Magyaros</option>
+                    <option value="olaszos">Olaszos</option>
+                    <option value="hawai">Hawai</option>
+                    <option value="gombas">gombas</option>
+                </optgroup>
+            </select> <br>
+            <label for="darab">Mennyiség:</label>
+            <input type="number" name="darab" id="darab" placeholder="db." min="1" max="25"><br>
+            <label for="extra">Extra feltétek:</label><br>
+            <label for="sonka">Sonka</label>
+            <input type="checkbox" name="sonka" id="sonka">
+            <label for="kukorica">Kukorica</label>
+            <input type="checkbox" name="kukorica" id="kukorica">
+            <label for="gomba">Gomba</label>
+            <input type="checkbox" name="gomba" id="gomba">
+            <label for="pepperoni">Pepperóni</label>
+            <input type="checkbox" name="pepperoni" id="pepperoni">
+
+            <fieldset>
+                <legend>
+                    <label for="fizetes">Fizetési Mód:</label>
+                </legend>
+                <input type="radio" name="fizetes" id="fizetes" value="utanvet">
+                <label for="fizetes">Utánvét - Kártya/Készpénz</label><br>
+                <input type="radio" name="fizetes" id="fizetes" value="kartya">
+                <label for="fizetes">Online - Bankkártya</label>
+            </fieldset>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
